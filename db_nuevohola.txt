@@ -1,0 +1,15 @@
+create schema db_nuevohola;
+use db_nuevohola;
+
+create table tb_usuarios(
+	documento 		varchar(100)		not null,
+	nombre			varchar(100)		not null,
+	fecha_nac		date			not null,
+    foto            varchar(2000)    null,
+	primary key(documento)
+);
+
+alter table tb_usuarios 
+add contraseña varchar(200) null;
+
+select * from tb_usuarios;
